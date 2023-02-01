@@ -1,0 +1,39 @@
+  function setup() {
+    createCanvas(800,600);
+		noLoop(); 
+  }
+  function draw() {  //noprotect 
+    background(0);
+    var x1 = 150;
+    var y1 = 550;
+    var x2 = 650;
+    var y2 = 550;
+    var x3 = 400;
+    var y3 = 50;
+    set(x1, y1, color(255));
+    set(x2, y2, color(255));
+    set(x3, y3, color(255));
+    var cx = x1;
+    var cy = y1;
+    let a = 0;
+    while(a<=30000){
+      var b=floor(random(0, 3));
+      if(b===0){
+        cx= (cx+x1)/2;
+        cy =(cy+y1)/2;
+        set(cx, cy, color(255));
+      }
+     else if(b===1){
+        cx=(cx+x2)/2;
+        cy=(cy+y2)/2;
+        set(cx, cy, color(255));
+      }
+      else{
+        cx=(cx+x3)/2;
+        cy=(cy+y3)/2;
+        set(cx, cy, color(255));
+      }
+      a++;
+    }
+    updatePixels();
+  }

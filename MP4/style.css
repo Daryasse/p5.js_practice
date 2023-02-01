@@ -1,0 +1,29 @@
+button{
+  background: #ffffff;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.container{
+  padding-top: 20px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+input{
+  display: block;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+section{
+  margin-right: 25px;
+}
+
+.clean{
+  margin-right: 25px;
+}
+
